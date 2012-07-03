@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Jquery-colorstrip</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src='colorstrip.js'></script>
   </head>
 
   <body>
@@ -35,7 +39,50 @@
 
 <p>jQuery plugin for decorating web pages with animated strips of color.</p>
 
-<p>Use it like so:</p>
+<style type="text/css">
+    #colorstrip1 {
+        overflow: hidden;
+        position: relative;
+        height: 25px;
+        width: 100%
+    }
+    #colorstrip2 {
+        overflow: hidden;
+        position: relative;
+        height: 25px;
+        width: 100%
+    }
+</style>
+
+<h3>Examples</h3>
+<p><b>Colorstrip using defaults:</b></p>
+
+<div id="colorstrip1"></div>
+
+<p><b>Another example with more colors:</b></p>
+
+<div id="colorstrip2"></div>
+
+<script type="text/javascript">
+    jQuery(document).ready(
+        function($) {
+            $('#colorstrip1').colorstrip();
+
+            $('#colorstrip2').colorstrip(
+                {
+                    minInterval: 6000,
+                    maxInterval: 12000,
+                    minWidth: 10,
+                    maxWidth: 80,
+                    opacity: 0.5,
+                    colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
+                }
+            );
+        }
+    );      
+</script>
+
+<h3>Use it like so:</h3>
 
 <pre><code>&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"&gt;&lt;/script&gt;
