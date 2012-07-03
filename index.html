@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery-colorstrip : jQuery plugin for decorating web pages with animated strips of color" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-colorstrip</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jotson/jquery-colorstrip">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-colorstrip</h1>
+          <h2 id="project_tagline">jQuery plugin for decorating web pages with animated strips of color</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jotson/jquery-colorstrip/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jotson/jquery-colorstrip/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jQuery-colorstrip</h1>
+
+<p>jQuery plugin for decorating web pages with animated strips of color.</p>
+
+<p>Use it like so:</p>
+
+<pre><code>&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src='colorstrip.js'&gt;&lt;/script&gt;
+
+&lt;style type="text/css"&gt;
+    #colorstrip {
+        overflow: hidden;
+        position: relative;
+        height: 10px;
+        width: 100%
+    }
+&lt;/style&gt;
+
+&lt;div id="colorstrip"&gt;&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+    jQuery(document).ready(
+        function($) {
+            $('#colorstrip').colorstrip(
+                {
+                    minInterval: 6000,
+                    maxInterval: 12000,
+                    minWidth: 10,
+                    maxWidth: 80,
+                    opacity: 0.5,
+                    colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
+                }
+            );
+        }
+    );      
+&lt;/script&gt;
+</code></pre>
+
+<p>You can also just use the defaults: <code>$('#colorstrip').colorstrip()</code></p>
+
+<p><code>minWidth</code>, <code>maxWidth</code> in pixels controls how wide each strip can be.</p>
+
+<p><code>minInterval</code>, <code>maxInterval</code> in millseconds controls how often each strip changes its movement vector (its speed and direction).</p>
+
+<p><code>colors</code> is an array of color values that controls the quantity and color of color strips in the animation.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-colorstrip maintained by <a href="https://github.com/jotson">jotson</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
