@@ -3,6 +3,8 @@ jQuery-colorstrip
 
 jQuery plugin for decorating web pages with animated strips of color.
 
+[Click here for example](http://jotson.github.com/jquery-colorstrip/)
+
 Use it like so:
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
