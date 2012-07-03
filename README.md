@@ -37,38 +37,6 @@ Use it like so:
         );      
     </script>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-<script type="text/javascript" src='https://raw.github.com/jotson/jquery-colorstrip/master/colorstrip.js'></script>
-
-<style type="text/css">
-    #colorstrip {
-        overflow: hidden;
-        position: relative;
-        height: 10px;
-        width: 100%
-    }
-</style>
-
-<div id="colorstrip"></div>
-
-<script type="text/javascript">
-    jQuery(document).ready(
-        function($) {
-            $('#colorstrip').colorstrip(
-                {
-                    minInterval: 6000,
-                    maxInterval: 12000,
-                    minWidth: 10,
-                    maxWidth: 80,
-                    opacity: 0.5,
-                    colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
-                }
-            );
-        }
-    );      
-</script>
-
 You can also just use the defaults: `$('#colorstrip').colorstrip()`
 
 `minWidth`, `maxWidth` in pixels controls how wide each strip can be.
